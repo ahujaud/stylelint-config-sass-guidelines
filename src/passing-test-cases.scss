@@ -108,9 +108,11 @@ $my-var: 10px;
 }
 
 // Nesting Depth test
-$colors: {
-  white: #fff
-};
+$colors: (
+  red: #f00,
+  green: #0f0,
+  blue: #00f,
+);
 
 .button {
   @each $key, $value in $colors {
